@@ -45,7 +45,7 @@
 
 
 
- <animation>
+ <!--<animation>
   <type>rotate</type>
   <object-name>flap1.L</object-name>
   <property>surface-positions/flap-pos-norm</property>
@@ -390,5 +390,5 @@
       <y> 0 </y> 
       <z> 0 </z> 
     </axis> 
-  </animation>
+  </animation>-->
 </PropertyList>
