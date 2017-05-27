@@ -13,6 +13,17 @@ October 2007 Detlef Faber
   <description>Me 163 Komet</description>
   <author>Detlef Faber</author>
   <status>beta</status>  
+ 
+  <tags>
+    <tag>fighter</tag>
+    <tag>messerschmitt</tag>
+    <tag>1940s</tag>
+    <tag>ww2</tag>
+    <tag>stol</tag>
+    <tag>rocket</tag>
+    <tag>single-engine</tag>
+  </tags>
+ 
   <flight-model>yasim</flight-model>
   <aero>me163-yasim</aero>
   <fuel-fraction>1.0</fuel-fraction>
@@ -25,16 +36,6 @@ October 2007 Detlef Faber
  
   <virtual-cockpit archive="y">true</virtual-cockpit>
   <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
-<!--
-  <sound>
-   <path>Aircraft/p51d/p51d-sound.xml</path>
-  </sound>
-
-  <submodels> 
-    <serviceable type="bool">true</serviceable>
-    <path>Aircraft/spitfireIX/Models/submodels.xml</path>
-  </submodels>
--->
   <panel>
   <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
   <visibility>false</visibility>
@@ -169,46 +170,6 @@ October 2007 Detlef Faber
   <hud>
    <enable3d>false</enable3d>
   </hud>  
-	<menubar>
-		<default>
-			<menu n="10">
-				<label>SpitfireIX</label>
-					<enabled type="bool">true</enabled>
-<!--
-					<item>
-						<label>Magically start engine</label>
-						<binding>
-							<command>nasal</command>
-							<script>f4u.magicstart();</script>
-						</binding>
-					</item>
--->
-					<item>
-						<label>Select Livery</label>
-              <binding>
-                <command>nasal</command>
-                <script>aircraft.livery.dialog.toggle()</script>
-              </binding>
-					</item>
-<!--
-					<item>
-						<label>Select Logo</label>
-              <binding>
-                <command>nasal</command>
-                <script>f4u.logo_dialog.toggle()</script>
-              </binding>
-					</item>
--->
-      <item>
-        <label>Registration</label>
-        <binding>
-          <command>nasal</command>
-          <script>immat.immat_dialog.toggle()</script>
-        </binding>
-      </item>
-			</menu>
-		</default>
-	</menubar>
 </sim>
 
  <engines>
@@ -249,7 +210,7 @@ October 2007 Detlef Faber
  </input>
 
 <!-- Nasal files/scripts -->
-  <nasal>
+  <!--<nasal>
 
     <spit9>
       <file>Aircraft/spitfireIX/Nasal/spit9.nas</file>
@@ -257,7 +218,7 @@ October 2007 Detlef Faber
    <immat>
      <file>Aircraft/beaufighter/Nasal/immat.nas</file>
    </immat>
-  </nasal>
+  </nasal>-->
 
 </PropertyList>
 
